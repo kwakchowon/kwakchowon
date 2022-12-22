@@ -1,0 +1,637 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1;
+    color: #343434;
+    font-family: 'Noto Sans KR';
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #343434;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 60px;
+    border-bottom: 1px solid #333;
+}
+header h1 a img{
+    width: 225px;
+    height: 50px;
+    left: -60px;
+    position: relative;
+    
+}
+header nav ul{
+    display: flex;
+    position: relative;
+    width: 100%;
+    left: 20px;
+    
+}
+header nav ul .depth01{
+   padding-left:80px;
+   position: relative;
+   left: -70px;
+}
+header nav ul .depth01:hover>a{
+    color:  #80624c;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #80624c;
+    
+
+    
+}
+header nav ul .depth01:hover .depth02{
+    position: absolute;
+    top : 60px;
+    left: -560px;
+    display: block;
+    display: flex;
+    
+}
+header nav ul .depth01>a{
+    font-size: 20px;
+    font-weight: 700;
+}
+header nav ul .depth01 .depth02{
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    top : 500px;
+    left: -600px;
+    z-index: 9;
+    width: 3000px;
+    padding:0 620px 0px;
+    display: none;
+}
+header nav ul .depth01 .depth02 div{
+    padding: 0 20px;
+}
+header nav ul .depth01 .depth02 div li a:hover{
+    color : #80624c
+}
+header nav ul .depth01 .depth03 div li a:hover{
+    color : #80624c
+}
+header nav ul .depth01 .depth02 div:nth-of-type(2){
+    background-color:rgba(128, 98, 76, 0.3);
+    height: 400px;
+    width: 170px;
+}
+header nav ul .depth01 .depth02 div:nth-of-type(4){
+    background-color:rgba(128, 98, 76, 0.3);
+    height: 400px;
+    width: 170px;
+}
+header nav ul .depth01 .depth02 div:nth-of-type(6){
+    background-color:rgba(128, 98, 76, 0.3);
+    height: 400px;
+    width: 170px;
+}
+header nav ul .depth01 .depth02 div li{
+   width: 150px;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: -20px;
+}
+header nav ul .depth01 .depth02 div li:nth-of-type(1){
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+header nav ul .depth01 .depth03{
+    display: flex;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9;
+    top : 0px;
+    left: 0px;
+    width: 170px;
+    display: none;
+}
+header nav ul .depth01:hover .depth03{
+    position: absolute;
+    top : 60px;
+    left: 60px;
+    display: block;
+    display: flex;
+    padding-top: px;
+}
+header nav ul .depth01 .depth03 div{
+    padding: 0 20px;
+}
+header nav ul .depth01 .depth03 div li{
+     width: 170px;    
+     line-height: 1.3;
+     font-size: 16px;
+     font-weight: 400;
+     display: block;
+     margin-bottom: 10px;
+     margin-right: -20px;
+     margin-top: 20px;
+}
+header nav ul .depth01 .depth03 div:nth-of-type(1){
+    background-color:rgba(128, 98, 76, 0.3);
+    height: 400px;
+    width: 170px;
+}
+
+header .search{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left:50px;
+}
+header .search li input[type=text]{
+    border: 0;
+    border-bottom: 1px solid #000000;
+    width: 300px;
+    height: 30px;
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 100%;
+    color: #000000;
+    outline: none;
+}
+header .search li  a img{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+header .search li:nth-of-type(1){
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 50%;
+}
+
+header .right_menu{
+    display: flex;
+    position: relative;
+    left: 120px;
+}
+header .right_menu li a{
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+header .right_menu li a:hover{
+    color:#80624c
+}
+/* ***********.main******************** */
+.main{
+    width: 1440px;
+    height: 500px;
+    /* background-color: #f6f6f6; */
+    margin: 15px auto ;
+    position: relative;
+}
+.main img{
+    width: 100%;
+    height: 100% ;
+}
+
+.main .cont01{
+    width: 100%;
+    padding-left: 111px;
+    height: 327px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main .cont01 h2{
+    padding-top: 51px;
+    font-size: 70px;
+    font-weight: 700;
+}
+.main .cont01 h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #676666;
+    padding-top: 24px;
+}
+.main .cont01 h4{
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 55px;
+    color: #0299e8;
+}
+.main .cont01 p{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+/* =************.main cont02******************** */
+.main .cont02{
+    padding-left: 111px;
+    position: absolute;
+    bottom: 50px;
+}
+.main .cont02 .box01 ul {
+    display: flex ; 
+    align-items: center;
+}
+.main .cont02 .box01 .icon li a{
+    display: block;
+    width: 100px;
+    top: 0;
+    left: -20px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.main .cont02 .box01 .icon li a img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    
+    
+}
+.main .cont02 .box01 .icon li a p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+    text-align: center;
+}
+
+/* ***************.main02********* */
+.main02{
+    width: 1440px;
+    height: 431px;
+    display: flex;
+    margin: 0 auto;
+}
+/* **************.main02 .cont01***************** */
+.main02 .cont01 .box01 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main02 .cont01 .box01 .A {
+    display: flex;
+    flex-wrap: wrap;
+    width: 586px;
+    height: 431px;
+    margin-right: 24px;
+    position: relative;
+    top: 0;
+    left: 0;
+   
+}
+.main02 .cont01 .box01 .A .button {
+    display: flex;
+   
+}
+.main02 .cont01 .box01 .A .button .on {
+    display: flex;
+}
+.main02 .cont01 .box01 .A .button ul{
+    display: none;
+}
+.main02 .cont01 .box01 .A .button ul li {
+    margin-right: 24px;
+}
+
+.main02 .cont01 .box01 .A .icon{
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+.main02 .cont01 .box01 .A .icon ul{
+    display: none;
+    width: 100%;
+}
+.main02 .cont01 .box01 .A .icon .on{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main02 .cont01 .box01 .A .icon ul li{
+    margin-right: 24px;
+}
+.main02 .cont01 .box01 .A .icon ul li img {
+    display: block;
+}
+.main02 .cont01 .box01 .A .icon ul li:hover .a{
+    display: none;
+}
+.main02 .cont01 .box01 .A .icon ul li .b{
+    display: none;
+}
+.main02 .cont01 .box01 .A .icon ul li:hover .b {
+    display: block;
+}
+.main02 .cont01 .box01 .A .icon ul li a p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #343434;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.main02 .cont01 .box01 .A .kospi {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main02 .cont01 .box01 .A .kospi h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.main02 .cont01 .box01 .A .kospi ul{
+    display: flex;
+    position: relative;
+    left: -10px;
+}
+.main02 .cont01 .box01 .A .kospi ul li:nth-of-type(2){
+    position: relative;
+    left: 15px;
+    top: 12px;
+}
+
+.main02 .cont01 .box01 .B{
+    width: 466px;
+    height: 431px;
+}
+.main02 .cont01 .box01 .B .notice{
+    width: 466px;
+}
+.main02 .cont01 .box01 .B .notice h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    width: 466px;
+}
+.main02 .cont01 .box01 .B .notice ul{
+    width: 466px;
+    height: 127px;
+}
+.main02 .cont01 .box01 .B .notice ul li{
+    margin-bottom: 16px;
+    opacity: 80%;
+    width: 466px;
+    display: flex;
+    justify-content: space-between;
+  }
+.main02 .cont01 .box01 .B .event h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.main02 .cont01 .box01 .C{
+    width: 342px;
+    height: 431px;
+    border: 1px solid #343434;
+    border-radius: 20px;
+    margin-left: 24px;
+}
+.main02 .cont01 .box01 .C h4{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0299e8;
+    margin: 24px 45px 35px ; 
+}
+.main02 .cont01 .box01 .C ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px 27px;
+}
+.main02 .cont01 .box01 .C ul li a img{
+    display: block;
+}
+.main02 .cont01 .box01 .C ul li a .b{
+    display: none;
+}
+.main02 .cont01 .box01 .C ul li a:hover .a{
+    display: none;
+}
+.main02 .cont01 .box01 .C ul li a:hover .b{
+    display: block;
+}
+
+.main02 .cont01 .box01 .C ul li a p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+    text-align: center;
+    margin-top: 16px;
+}
+.main02 .cont01 .box01 .C ul li a:hover p{
+    color: #80624c;
+}
+
+/* *************.main03************* */
+.main03{
+    background-image:url(../img/back.jpg);
+    width: 1440px;
+    height: 688px;
+    margin: 140px auto;
+    
+    
+}
+.main03 h2{
+    width: 100%;
+    height: 53px;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 70px 0 65px
+}
+/* ************.main03 cont01*************** */
+.main03 .cont01{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-right: 25px;
+}
+.main03 .cont01 .box01{
+    background-image: url(../img/box.png);
+    width: 443px;
+    height: 478px;
+    
+}
+.main03 .cont01 img{
+    width: 20px;
+    height: 57px;
+    
+}
+.main03 .cont01 .box01 ul{
+    width: 100%;
+    
+}
+.main03 .cont01 .box01 ul h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 46px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.main03 .cont01 .box01 ul li{
+    width: 339px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 44px;
+    border-bottom: 1px solid #747474;
+    line-height: 59px;
+    
+}
+.main03 .cont01 .box01 ul .button{
+    background: #80624c;
+    width: 122px;
+    height: 50px;
+    border-radius: 40px;
+    line-height: 50px;
+    margin: 42px auto 0;
+}
+.main03 .cont01 .box01 ul .button a{
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.main03 .cont01 .box01 ul .button:hover a{
+    font-size: 17px;
+    transition: 0.3s;
+}
+.main03 .cont01 .box01 ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #747474;
+    transition: 0.3s; 
+}
+
+.main03 .cont01 .box01 ul li a:nth-of-type(2){
+    color: #333;
+}
+
+/* ***********footer .cont01**************** */
+footer{
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+}
+footer .cont01{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 240px;
+}
+footer .cont01 .box01{
+    
+}
+footer .cont01 .box01 select{
+    width: 175px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 90%;
+    color: #343434;
+    margin-top: 22px;
+    margin-right: 26px;
+}
+footer .cont01 .box01 select:nth-of-type(1){
+    width: 220px;
+}
+footer .cont01 .box01 select{
+    padding-left: 13px;
+    border-radius: 10px;
+    color: #343434;
+    opacity: 90%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+}
+footer .cont01 .box01 select option{
+    font-family: 'Noto Sans KR';
+    font-size: 14px;
+    font-weight: 400;
+    color: #343434;
+    opacity: 70%;
+    margin: 10px 0;
+    
+}
+footer .cont01 .box01 select option a{
+    color: #343434;
+    opacity: 90%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .cont01 .box02{
+
+}
+footer .cont01 .box02 ul{
+    display: flex;
+}
+footer .cont01 .box02 ul {
+    margin-bottom: 15px;
+}
+footer .cont01 .box02 ul li a{
+    opacity: 70%;
+    margin-right: 35px;
+    font-size: 14px
+}
+
+/* ***************footer .cont02******************************** */
+footer .cont02{
+    width: 377px;
+    margin-right: 220px;
+}
+footer .cont02 .box01{
+    display: flex;
+}
+footer .cont02 .box01 ul{
+    display: flex;
+    flex-wrap: wrap ;
+    margin-top: 34px;
+    
+}
+footer .cont02 .box01 ul li{
+    width: 175px;
+    height: 40px;
+    border: 1px solid #343434 ;
+    border-radius: 10px;
+    opacity: 70%;
+    margin-bottom: 11px;
+    text-align: center;
+    line-height: 40px;
+}
+footer .cont02 .box01 ul li a{
+    font-size: 15px;
+    font-weight: 500;
+}
